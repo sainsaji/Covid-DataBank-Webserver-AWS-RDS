@@ -65,6 +65,11 @@ app.get('/add', (req, res) => {
     });
 });
 
+app.get('/test', (req, res) => {
+    res.send({
+        title:"starting node server"
+    })});
+
 app.post('/save', (req, res) => {
     let data = {
         statename: req.body.statename,
